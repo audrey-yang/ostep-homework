@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
         // printf("execvpe\n");
         // execvpe("ls", env_cmd, env);
     } else {
-        wait(&rc);
+        wait(NULL);
         printf("Child finished\n");
     }
     return 0;
